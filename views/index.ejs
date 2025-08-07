@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Todo List</h1>
+
+        <form action="/add" method="POST" class="form">
+            <input type="text" name="title" placeholder="New task" required>
+            <select name="priority">
+                <option value="high">🔥 High</option>
+                <option value="medium">⚠️ Medium</option>
+                <option value="low">🟢 Low</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+
+        <div class="filter">
+            <span>Filter by priority:</span>
+            <a href="/?priority=all" class="<%= currentFilter === 'all' ? 'active' : '' %>">All</a>
+            <a href="/?priority=high" class="<%= currentFilter === 'high' ? 'active' : '' %>">High</a>
+            <a href="/?priority=medium" class="<%= currentFilter === 'medium' ? 'active' : '' %>">Medium</a>
+            <a href="/?priority=low" class="<%= currentFilter === 'low' ? 'active' : '' %>">Low</a>
+        </div>
+
+        <ul class="task-list">
+            <% if (tasks.length === 0) { %>
+                <li class="empty">No tasks found.</li>
+            <% } %>
+            <% tasks.forEach(task => { %>
+                <li class="<%= task.done ? 'done' : '' %>">
+                    <form action="/toggle" method="POST" class="inline-form">
+                        <input type="hidden" name="id" value="<%= task.id %>">
+                        <button type="submit"><%= task.done ? '✅' : '⬜' %></button>
+                    </form>
+                    <span><%= task.title %> - <small>[<%= task.priority %>]</small></span>
+                    <form action="/delete" method="POST" class="inline-form">
+                        <input type="hidden" name="id" value="<%= task.id %>">
+                        <button type="submit" class="delete">❌</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
