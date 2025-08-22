@@ -36,9 +36,10 @@ A simple and modern Todo List web application built with **Node.js**, **Express*
 ### Installation
 
 1. **Clone the repository:**
+<pre>
 git clone https://github.com/vaibhavpatidarbhoot/ass-7-todo-ejs.git
 cd ass-7-todo-ejs
-
+</pre>
 2. **Install dependencies:**
 
 npm install
@@ -53,8 +54,13 @@ The app will run on [http://localhost:3000](http://localhost:3000)
 ---
 
 ## Folder Structure
-. ├── public/ # Static files (CSS, JS) ├── views/ # EJS templates ├── index.js # Main server file ├── package.json └── README.md
-
+<pre>
+  ├── public/ # Static files (CSS, JS)
+  ├── views/ # EJS templates 
+  ├── index.js # Main server file 
+  ├── package.json 
+  └── README.md
+</pre>
 
 ## Author
 
