@@ -64,7 +64,7 @@ The app will run on [http://localhost:3000](http://localhost:3000)
 
 ## Author
 
-- [Akurathi Kamal](https://github.com/vaibhavpatidarbhoot)
+- [Vaibhav Patidar Bhoot](https://github.com/vaibhavpatidarbhoot)
 
 ---
 
