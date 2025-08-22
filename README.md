@@ -1,7 +1,7 @@
 # Tutedude Todo App
 
 A simple and modern Todo List web application built with **Node.js**, **Express**, and **EJS**.  
-[Live Demo](https://tutedude-todo.onrender.com/)
+[Live Demo](https://ass-7-todo-ejs.onrender.com/)
 
 ---
 
@@ -16,7 +16,7 @@ A simple and modern Todo List web application built with **Node.js**, **Express*
 
 ## Demo
 
-[https://tutedude-todo.onrender.com/](https://tutedude-todo.onrender.com/)
+[https://ass-7-todo-ejs.onrender.com/](https://ass-7-todo-ejs.onrender.com/)
 
 ---
 
@@ -36,8 +36,8 @@ A simple and modern Todo List web application built with **Node.js**, **Express*
 ### Installation
 
 1. **Clone the repository:**
-git clone https://github.com/akurathikamal/tutedude-todo.git 
-cd tutedude-todo
+git clone https://github.com/vaibhavpatidarbhoot/ass-7-todo-ejs.git
+cd ass-7-todo-ejs
 
 2. **Install dependencies:**
 
@@ -58,7 +58,7 @@ The app will run on [http://localhost:3000](http://localhost:3000)
 
 ## Author
 
-- [Akurathi Kamal](https://github.com/akurathikamal)
+- [Akurathi Kamal](https://github.com/vaibhavpatidarbhoot)
 
 ---
 
